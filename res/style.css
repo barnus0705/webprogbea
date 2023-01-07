@@ -13,28 +13,24 @@ header{
     width: 100%;
     height: 200px;
     position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 .jobb{
-    position: absolute;
-    width: auto;
-    top: 50%;
-    left: 75%;
-    transform: translateY(-50%);
+    margin-left: 15%;
+    
 }
 .bal{
-    position: absolute;
-    width: auto;
-    top: 50%;
-    left: 15%;
-    transform: translateY(-50%);
-    font-size: 46pt;
+    margin-right: 15%;
 }
 .bal p{
     padding: 10px 30px 10px 30px;
+    font-size: 36pt;
     background-color: rgba(128, 128, 128, 0.9);
 }
 header div a{
-    padding: 60px;
+    padding: 30px;
     font-weight: bold;
     font-size: 24pt;
     color:white;
@@ -43,7 +39,6 @@ header div a{
 }
 header div a:hover{
     transition: 0.6s;
-    font-size: 32pt;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -55,20 +50,24 @@ nav{
     text-align: center;
 }
 nav ul{
-    display: inline-flex;   
+    display: inline-flex;
+    font-variant:small-caps;
+    font-size: 16pt;
 }
 nav ul li{
     list-style: none;
-    padding: 20px;
+    
     
 }
-nav ul li:hover{
+nav ul li a:hover{
     transition: 0.5s;
     background-color: black;
+    padding:10px 60px 10px 60px;
 }
 nav ul li a{
     text-decoration: none;
     color: white;
+    padding: 10px 40px 10px 40px;
     
 }
 main{
@@ -76,6 +75,35 @@ main{
     width: 100%;
     background-color: white;
     display: inline-block;   
+}
+
+main section div{
+    max-width: 1200px;   
+    width: auto;
+    height: auto;
+    margin-left: 40px;
+    background-color: rgba(128, 2, 8, 0.1);
+}
+main section div h2,p{
+    padding: 10px;
+}
+main aside{
+    display: block;
+    float: right;
+}
+main aside div{
+    height: auto;
+    width: 600px;
+    background-color: rgba(128, 2, 8, 0.1);
+    margin-right: 40px;
+}
+main aside div h3,p{
+    padding: 10px;
+}
+main aside img{
+    width: 85%;
+    height: 85%;
+    margin-left: 40px;
 }
 .space{
     height: 100px;
@@ -90,6 +118,7 @@ footer{
 }
 footer ul{
     display: inline-flex;
+    margin-top: 30px;
 }
 footer ul li{
     padding: 0px 10px 0px 10px;
@@ -102,6 +131,62 @@ footer ul li a{
 }
 footer p{
     display: inline-flex;
-    position: absolute;
-    right: 5%;
+    float: right;
+    margin-right: 100px;
+}
+.galeria{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.galeriakep{
+    
+    max-width: 100%;
+    height: 320px;
+    margin: 20px;
+    border: 1px solid gray;
+}
+.galeriakep:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.termekbox{
+    max-width: 300px;
+    max-height: 5000px;
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 10px 20px 10px;
+    padding: 20px;
+    background-color: rgba(132, 23, 84, 0.2);
+}
+.termekbox h2{
+    margin-left: 20px;
+    
+}
+.termek{
+    text-align: justify;
+    text-justify:inter-word;
+}
+.text{
+    max-height: 700px;
+    height: auto;
+    
+}
+.termek img{
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+}
+.termekbox a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
 }

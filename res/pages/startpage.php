@@ -9,21 +9,15 @@
 </head>
 <body>
     <header>
-        <?php
-        if(isset($_GET['cim'])){
-            echo '<div class="bal"><p>'.$_GET['cim'].'</p></div>';
-        }else{
-            echo '<div class="bal"><p>Karácsonyi kiárusítás</p></div>';
-        }
-        
+        <?php include 'functions.php';
+            cim();
         ?>
         <div class="jobb"><a href="index.php">Főoldal</a></div>
     </header>
     <nav>
         <ul>
             <li><a href="termek.php?cim=Termékek">Termékek</a></li>
-            <li><a href="galleria.php?cim=Galléria">Galléria</a></li>
-            <li><a href="company.php?cim=Rólunk">Rólunk</a></li>
+            <li><a href="galeria.php?cim=Galéria">Galéria</a></li>
             <li><a href="contact.php?cim=Kapcsolatok">Kapcsolatok</a></li>
         </ul>
     </nav>
